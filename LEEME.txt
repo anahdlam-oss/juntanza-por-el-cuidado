@@ -1,0 +1,3 @@
+Sube aquí las fotos (JPG, menos de 500 KB cada una), con estos nombres:
+inicio.jpg, acerca.jpg, territorio.jpg, organizaciones.jpg, testimonios.jpg, cartilla.jpg, periodico.jpg
+Si una foto no existe, se ve el bloque de color sólido.
