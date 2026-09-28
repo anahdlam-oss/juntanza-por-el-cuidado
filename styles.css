@@ -170,6 +170,12 @@ a.otro:hover{transform:translateY(-3px);background:#fff}
 .ver-perfil{display:inline-block;margin-top:.6rem;font-weight:500;color:var(--titulo);border-bottom:2px solid var(--verde);text-decoration:none}
 .resalta{outline:5px solid var(--verde);outline-offset:5px;transition:outline .3s}
 
+.card{scroll-margin-top:6rem}
+.card:target{outline:5px solid var(--verde);outline-offset:4px}
+.card .mujeres{margin-top:.7rem;font-size:.92rem}
+.card .mujeres a{color:var(--titulo);font-weight:500;text-decoration:none;border-bottom:2px solid var(--verde)}
+.perfil .datos a{color:var(--titulo);font-weight:500;border-bottom:2px solid var(--verde);text-decoration:none}
+
 @media (max-width:760px){
   .portada{grid-template-columns:1fr}
   .portada .foto{min-height:40vh;order:2}
