@@ -23,13 +23,13 @@ img{max-width:100%;display:block}
 .menu a:hover,.menu a.on{color:var(--morado);text-decoration:underline;text-decoration-color:var(--verde);text-underline-offset:6px;text-decoration-thickness:2px}
 
 /* Portada: texto a la izquierda, foto a la derecha */
-.portada{min-height:100vh;display:grid;grid-template-columns:1.1fr 1fr;padding-top:3.4rem}
+.portada{min-height:100vh;display:grid;grid-template-columns:1fr 1.3fr;padding-top:3.4rem}
 .portada .txt{display:flex;flex-direction:column;justify-content:center;padding:clamp(2rem,6vw,6rem)}
 .portada h1{font-size:clamp(2.8rem,7.5vw,6rem);text-transform:uppercase;letter-spacing:.01em}
 .portada .sub{margin-top:1.2rem;font-size:clamp(.9rem,1.8vw,1.2rem);letter-spacing:.16em;text-transform:uppercase;color:var(--morado);font-weight:500}
 .portada .bajar{margin-top:2.5rem;font-size:.9rem;color:var(--titulo);text-decoration:none;border-bottom:2px solid var(--verde);align-self:flex-start;animation:sube 1.8s ease-in-out infinite}
 @keyframes sube{50%{transform:translateY(6px)}}
-.portada .foto{background-color:var(--lila);background-size:cover;background-position:center}
+.portada .foto{background-color:var(--lila);background-size:cover;background-position:center 72%}
 
 .intro{padding:clamp(2.5rem,7vw,5rem) clamp(1.5rem,8vw,7rem);background:var(--fondo-2);border-top:6px solid var(--verde)}
 .intro p{max-width:52rem;margin:auto;font-family:Fraunces,serif;font-size:clamp(1.25rem,2.6vw,1.9rem);text-align:center;color:var(--titulo)}
