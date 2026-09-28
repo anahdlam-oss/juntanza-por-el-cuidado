@@ -13,8 +13,14 @@
 <nav class="menu"><a class="marca" href="index.html">Juntanza por el cuidado</a><a href="index.html">Inicio</a><a href="acerca.html">Acerca</a><a href="investigacion.html">Investigación</a><a href="territorio.html" class=on>Territorio</a><a href="organizaciones.html">Organizaciones</a><a href="testimonios.html">Testimonios</a><a href="cartilla.html">Cartilla</a><a href="periodico.html">Periódico</a></nav>
 <header class="cabecera" style="--c2:#97A677"><h1>El territorio</h1><p>Mapa y fotografías del norte del Cauca.</p></header>
 <main class="contenido">
-<figure class="mapa-fig"><img src="img/mapa-cauca.svg" onerror="this.onerror=null;this.src='img/mapa-cauca.png'" alt="Mapa del departamento del Cauca con los siete municipios de la investigación resaltados en morado oscuro: Miranda, Corinto, Caloto, Guachené, Puerto Tejada, Villa Rica y Santander de Quilichao"><figcaption>Los siete municipios de la investigación, en morado oscuro, en el norte del departamento del Cauca.</figcaption></figure>
+<figure class="mapa-fig"><img src="img/mapa-cauca.svg" id="mapa" alt="Mapa del departamento del Cauca con los siete municipios de la investigación resaltados en morado oscuro: Miranda, Corinto, Caloto, Guachené, Puerto Tejada, Villa Rica y Santander de Quilichao"><figcaption>Los siete municipios de la investigación, en morado oscuro, en el norte del departamento del Cauca.</figcaption></figure>
 <ul class="chips"><li>Miranda</li><li>Corinto</li><li>Caloto</li><li>Guachené</li><li>Puerto Tejada</li><li>Villa Rica</li><li>Santander de Quilichao</li></ul>
+<script>
+(function(){var i=document.getElementById('mapa');if(!i)return;
+var l=['img/mapa-cauca.png','img/Colombia_Cauca_location_map__adm_colored_.svg','img/Colombia_Cauca_location_map__adm_colored_.png','img/Colombia_Cauca_location_map__adm_colored_.jpg','mapa-cauca.svg','mapa-cauca.png','Colombia_Cauca_location_map__adm_colored_.svg','Colombia_Cauca_location_map__adm_colored_.png'],k=0;
+function f(){if(k<l.length){i.src=l[k++];}else{i.onerror=null;}}
+i.onerror=f;if(i.complete&&i.naturalWidth===0){f();}})();
+</script>
 <p><!-- COMPLETAR: texto breve sobre el territorio --></p>
 <h2>Galería del territorio</h2>
 <div class="galeria">

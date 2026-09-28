@@ -55,7 +55,7 @@ img{max-width:100%;display:block}
 .cabecera{background:var(--fondo-2);padding:9rem clamp(1.5rem,8vw,7rem) 3.5rem;border-bottom:8px solid var(--c2,var(--verde))}
 .cabecera h1{font-size:clamp(2.4rem,7vw,5rem)}
 .cabecera p{max-width:none;margin-top:1rem;font-size:1.15rem;color:var(--morado)}
-.contenido{padding:clamp(2.5rem,6vw,4.5rem) clamp(1.5rem,8vw,7rem);max-width:none;margin:0}
+.contenido{box-sizing:content-box;padding:clamp(2.5rem,6vw,4.5rem) clamp(1.5rem,5vw,3rem);max-width:79rem;margin:0 auto}
 .contenido h2{font-size:clamp(1.6rem,3vw,2.3rem);margin:2rem 0 .8rem}
 .contenido p{margin-bottom:1rem;max-width:none;font-size:1.08rem}
 .mapa{height:45vh;background:var(--lila);color:var(--fondo);display:grid;place-items:center;border-radius:.6rem;margin:1rem 0}
@@ -123,7 +123,7 @@ footer p{max-width:44rem;font-size:.95rem}
 @media (max-width:1000px){.perfil-card{max-width:calc(33.33% - .7rem)}}
 @media (max-width:760px){.perfil{grid-template-columns:1fr}.perfil-card{max-width:calc(50% - .5rem)}.perfil .foto{max-width:16rem}}
 
-.mapa-fig{margin:1rem 0 1rem;max-width:72rem}
+.mapa-fig{margin:1rem 0 1rem}
 .mapa-fig img{width:100%;height:auto;border-radius:.6rem;border:2px solid var(--lila)}
 .mapa-fig figcaption{font-size:.9rem;color:var(--morado);margin-top:.5rem}
 
