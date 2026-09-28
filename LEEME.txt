@@ -1,4 +1,5 @@
-Sube aqui las fotos de las galerias (JPG, menos de 500 KB cada una), con estos nombres:
-Territorio: territorio-1.jpg ... territorio-6.jpg
-Registro de campo (Investigacion): taller-1.jpg ... taller-6.jpg
-Si una foto no existe, se ve el cuadro "Foto". La descripcion de cada foto se edita en el archivo .html correspondiente.
+Sube aqui las fotos de cada organizacion (JPG, menos de 500 KB):
+Foto principal: brisas-rio-palo.jpg, ujima.jpg, asoafromi.jpg, transformando-vida.jpg, arte-educacion-paz.jpg,
+mujeres-gestoras-paz.jpg, cc-territorio-paz.jpg, asoredsosa.jpg, productores-platano.jpg, futravid.jpg, triunfemos.jpg
+Galeria (3 por organizacion): el mismo nombre con -1, -2, -3. Ej.: ujima-1.jpg, ujima-2.jpg, ujima-3.jpg
+Si una foto no existe, se ve el recuadro "Imagen" o "Foto".

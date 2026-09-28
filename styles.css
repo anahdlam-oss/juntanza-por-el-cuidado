@@ -120,7 +120,7 @@ footer p{font-size:.95rem;line-height:1.5}
 .nav-perfiles{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:1.2rem;border-top:2px solid var(--verde)}
 .nav-perfiles a{color:var(--titulo);font-weight:500}
 @media (max-width:1000px){.perfil-card{max-width:calc(33.33% - .7rem)}}
-@media (max-width:760px){.perfil{grid-template-columns:1fr}.perfil-card{max-width:calc(50% - .5rem)}.perfil .foto{max-width:16rem}}
+@media (max-width:760px){.perfil{grid-template-columns:1fr}.perfil .historia.lado{grid-column:auto}.perfil-card{max-width:calc(50% - .5rem)}.perfil .foto{max-width:16rem}}
 
 .mapa-fig{margin:1rem 0 1rem}
 .mapa-fig img{width:100%;height:auto;border-radius:.6rem;border:2px solid var(--lila)}
@@ -175,6 +175,8 @@ a.otro:hover{transform:translateY(-3px);background:#fff}
 .card .mujeres{margin-top:.7rem;font-size:.92rem}
 .card .mujeres a{color:var(--titulo);font-weight:500;text-decoration:none;border-bottom:2px solid var(--verde)}
 .perfil .datos a{color:var(--titulo);font-weight:500;border-bottom:2px solid var(--verde);text-decoration:none}
+
+.perfil .historia.lado{grid-column:2;margin-top:0}
 
 @media (max-width:760px){
   .portada{grid-template-columns:1fr}
