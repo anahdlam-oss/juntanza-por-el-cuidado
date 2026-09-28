@@ -158,6 +158,19 @@ footer p{max-width:44rem;font-size:.95rem}
 #lb p{color:var(--fondo);margin-top:1rem;max-width:44rem;text-align:center;font-size:.95rem}
 #lb button{position:absolute;top:.8rem;right:1.2rem;background:none;border:0;color:var(--fondo);font-size:2.4rem;cursor:pointer;line-height:1}
 
+/* Enlaces entre piezas */
+.otros{grid-column:1/-1;margin-top:.5rem}
+.otros h2{margin:0 0 .8rem}
+.otros-lista{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.otro{display:flex;align-items:center;gap:.9rem;padding:.9rem 1.1rem;background:var(--fondo-2);border-radius:.6rem;border-left:6px solid var(--verde);text-decoration:none;color:inherit;transition:.2s}
+a.otro:hover{transform:translateY(-3px);background:#fff}
+.otro img{width:88px;height:66px;object-fit:cover;border-radius:.3rem;flex:none}
+.otro .tipo{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--morado)}
+.otro strong{font-family:Fraunces,serif;font-size:1.05rem;color:var(--titulo)}
+.otro.off{opacity:.55;border-left-color:var(--lila)}
+.ver-perfil{display:inline-block;margin-top:.6rem;font-weight:500;color:var(--titulo);border-bottom:2px solid var(--verde);text-decoration:none}
+.resalta{outline:5px solid var(--verde);outline-offset:5px;transition:outline .3s}
+
 @media (max-width:760px){
   .portada{grid-template-columns:1fr}
   .portada .foto{min-height:40vh;order:2}
