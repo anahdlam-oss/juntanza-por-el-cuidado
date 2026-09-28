@@ -141,6 +141,23 @@ footer p{max-width:44rem;font-size:.95rem}
 .galeria figcaption strong{display:block;font-family:Fraunces,serif;font-size:1.05rem;color:var(--titulo);margin-bottom:.2rem}
 .galeria figcaption span{color:var(--morado)}
 
+/* Postales */
+.postales{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;width:100%}
+.postales figure{margin:0;background:var(--fondo-2);border-radius:.6rem;overflow:hidden;border-bottom:6px solid var(--verde)}
+.postales figure:nth-child(3n+2){border-color:var(--morado)}
+.postales figure:nth-child(3n){border-color:var(--salvia)}
+.postales img{width:100%;height:auto;display:block;cursor:zoom-in}
+.postales figcaption{padding:.9rem 1rem 1.1rem;font-size:.92rem;line-height:1.5}
+.postales figcaption strong{display:block;font-family:Fraunces,serif;font-size:1.1rem;color:var(--titulo);margin-bottom:.2rem}
+.postales figcaption span{color:var(--texto)}
+@media (max-width:900px){.postales{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.postales{grid-template-columns:1fr}}
+#lb{display:none;position:fixed;inset:0;z-index:100;background:rgba(46,27,71,.94);flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78vh;border-radius:.4rem}
+#lb p{color:var(--fondo);margin-top:1rem;max-width:44rem;text-align:center;font-size:.95rem}
+#lb button{position:absolute;top:.8rem;right:1.2rem;background:none;border:0;color:var(--fondo);font-size:2.4rem;cursor:pointer;line-height:1}
+
 @media (max-width:760px){
   .portada{grid-template-columns:1fr}
   .portada .foto{min-height:40vh;order:2}

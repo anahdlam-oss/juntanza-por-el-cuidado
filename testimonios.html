@@ -36,9 +36,21 @@
   <div class="pieza">Episodio 2 (pendiente)</div>
 </div>
 <div class="panel" id="postales">
-  <!-- <div class="pieza"><img src="img/postal1.jpg" alt="Descripción"></div> -->
-  <div class="pieza">Postal 1 (pendiente)</div>
-  <div class="pieza">Postal 2 (pendiente)</div>
+  <p class="nota" style="width:100%">Postales elaboradas en los talleres con la frase "Para mí cuidar es…". Haz clic en una para verla más grande.</p>
+  <div class="postales">
+  <figure><img src="img/postales/01-vista-general.jpg" alt="Vista de conjunto de todas las postales sobre una mesa" loading="lazy"><figcaption><strong>Las postales del taller</strong><span>Vista de conjunto de las postales elaboradas por las participantes.</span></figcaption></figure>
+  <figure><img src="img/postales/02-laura-motato.jpg" alt="Postal de Laura Motato con una figura rodeada de personas" loading="lazy"><figcaption><strong>Laura Motato</strong><span>«Para mí cuidar es… buscar el bienestar de mi red de apoyo.» Alrededor, las palabras empatía, amor, tiempo y sacrificios.</span></figcaption></figure>
+  <figure><img src="img/postales/03-sofia-velez.jpg" alt="Postal de Sofía Velez con marco morado brillante" loading="lazy"><figcaption><strong>Sofía Velez</strong><span>Un mensaje sobre el miedo a fallar y el valor de intentarlo.</span></figcaption></figure>
+  <figure><img src="img/postales/04-jessica-balanta.jpg" alt="Postal de Jessica Balanta con un corazón alado" loading="lazy"><figcaption><strong>Jessica Balanta</strong><span>«Cuidarme es reconocer que mi bienestar también importa.» Dice que no puede dar lo mejor de sí sin procurar su salud, su paz y su equilibrio.</span></figcaption></figure>
+  <figure><img src="img/postales/05-danahe-angola.jpg" alt="Postal de Danahé Angola con un personaje dibujado" loading="lazy"><figcaption><strong>Danahé Angola</strong><span>«Antes de cuidar a alguien más debemos cuidarnos a nosotras mismas.» Cuidarse, escribe, es mantener el cuerpo sano y sentirse bien.</span></figcaption></figure>
+  <figure><img src="img/postales/06-maria-del-pilar-gonzalez.jpg" alt="Postal de María del Pilar González con un dibujo de sí misma y su anillo" loading="lazy"><figcaption><strong>María del Pilar González</strong><span>«Brilla este anillo como brilla Pilar.» Un anillo que simboliza identidad, amor propio y momentos importantes de su vida.</span></figcaption></figure>
+  <figure><img src="img/postales/07-natalia-ortega.jpg" alt="Postal de Natalia Ortega con un elefante de escarcha" loading="lazy"><figcaption><strong>Natalia Ortega</strong><span>«Cuidar es respetarte a ti mismo y respetar a los demás.»</span></figcaption></figure>
+  <figure><img src="img/postales/08-mata-de-pronto-alivio.jpg" alt="Postal con un árbol dibujado y la frase el cuidado es la base de mi territorio" loading="lazy"><figcaption><strong>Mata de pronto alivio</strong><span>«El cuidado para mí es la base de mi territorio.» Autora por confirmar.</span></figcaption></figure>
+  <figure><img src="img/postales/09-dos-postales.jpg" alt="Dos postales con dibujos de casas, personas, un río y flores" loading="lazy"><figcaption><strong>Cuidado personal y comunitario</strong><span>Dos postales: una sobre cuidarse para poder cuidar a otros y al medio ambiente, y otra que dibuja la comunidad, los vecinos y el río. Autoras por confirmar.</span></figcaption></figure>
+  <figure><img src="img/postales/10-arturo.jpg" alt="Postal de Arturo con un dibujo de un paisaje" loading="lazy"><figcaption><strong>Arturo</strong><span>Dibujo sobre cuidar el entorno: el sol, las flores, el reciclaje y una persona limpiando.</span></figcaption></figure>
+  <figure><img src="img/postales/11-daniela-madrigal.jpg" alt="Postal de Daniela Madrigal con un marco de escarcha" loading="lazy"><figcaption><strong>Daniela Madrigal</strong><span>«Para mí cuidar es respetar la diferencia para construir en unidad.»</span></figcaption></figure>
+  <figure><img src="img/postales/12-noralba-guerrero.jpg" alt="Postal de Noralba Guerrero con flores dibujadas en las esquinas" loading="lazy"><figcaption><strong>Noralba Guerrero</strong><span>Habla de sus objetos de fe y de la protección de los arcángeles, y quiere que el mundo conozca su historia.</span></figcaption></figure>
+  </div>
 </div>
 <a class="volver" href="index.html">← Volver al inicio</a>
 </main>
@@ -47,6 +59,11 @@ document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
   document.querySelectorAll(".tabs button,.panel").forEach(e=>e.classList.remove("on"));
   b.classList.add("on");document.getElementById(b.dataset.p).classList.add("on");
 });
+
+var lb=document.createElement('div');lb.id='lb';lb.innerHTML='<button aria-label="Cerrar">&times;</button><img alt=""><p></p>';document.body.appendChild(lb);
+document.querySelectorAll('.postales img').forEach(function(im){im.addEventListener('click',function(){lb.querySelector('img').src=im.src;lb.querySelector('img').alt=im.alt;lb.querySelector('p').textContent=im.nextElementSibling?im.parentNode.querySelector('figcaption').innerText:'';lb.classList.add('on');});});
+lb.addEventListener('click',function(){lb.classList.remove('on');});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
 </script>
 <footer id="contacto">
   <h3>Contacto</h3>
