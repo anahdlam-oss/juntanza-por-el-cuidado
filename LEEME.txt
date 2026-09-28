@@ -1,5 +1,4 @@
-Sube aqui las fotos de cada mujer (JPG vertical, menos de 500 KB) con estos nombres:
-danahe-angola.jpg, daniela-madrigal.jpg, jessica-balanta.jpg, luz-dary-betancourt.jpg,
-maria-mileidy-gonzalez.jpg, melissa-agudelo.jpg, natalia-ortega.jpg, noralba-guerrero.jpg,
-ofir-mina.jpg, sofia-silva.jpg
-Si una foto no existe, se ve el recuadro "Imagen".
+Sube aqui las fotos de las galerias (JPG, menos de 500 KB cada una), con estos nombres:
+Territorio: territorio-1.jpg ... territorio-6.jpg
+Registro de campo (Investigacion): taller-1.jpg ... taller-6.jpg
+Si una foto no existe, se ve el cuadro "Foto". La descripcion de cada foto se edita en el archivo .html correspondiente.
