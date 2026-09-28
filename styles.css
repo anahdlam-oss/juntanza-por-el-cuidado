@@ -123,6 +123,10 @@ footer p{max-width:44rem;font-size:.95rem}
 @media (max-width:1000px){.perfil-card{max-width:calc(33.33% - .7rem)}}
 @media (max-width:760px){.perfil{grid-template-columns:1fr}.perfil-card{max-width:calc(50% - .5rem)}.perfil .foto{max-width:16rem}}
 
+.mapa-fig{margin:1rem 0 2rem}
+.mapa-fig img{width:100%;height:auto;border-radius:.6rem;border:2px solid var(--lila)}
+.mapa-fig figcaption{font-size:.9rem;color:var(--morado);margin-top:.5rem}
+
 @media (max-width:760px){
   .portada{grid-template-columns:1fr}
   .portada .foto{min-height:40vh;order:2}
